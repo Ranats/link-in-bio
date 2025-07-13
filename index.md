@@ -55,7 +55,7 @@ permallink: /
       {% if image.path contains folder and image.path contains 'assets/thumbnails/' %}
         {% assign base = image.name | split: '.' | first %}
         <div class="swiper-slide thumb">
-          <a href="/images/#{{ base }}">
+          <a href="/images/#{{ base }} | relative_url }}">
             <img src="{{ image.path | relative_url }}"
                  alt="{{ image.name }}"
                  >
