@@ -1,0 +1,25 @@
+title: Ranats Links
+baseurl: "/link-in-bio"
+url: "https://ranats.github.io"
+include:
+  - assets
+  - images
+  - index.md
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  posts:
+    output: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+paginate: 0
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed

@@ -2,8 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ranats｜リンク一覧</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -78,35 +83,6 @@
   </style>
 </head>
 <body>
-  <div class="profile">
-    <img src="https://avatars.githubusercontent.com/u/9674834?v=4" alt="Ranats">
-    <h1>Satoshi Coda. / Ranats のリンク集</h1>
-  </div>
-
-  <div class="links">
-    <div class="link-card">
-      <a href="https://ranats.github.io/kurohon-roulette" target="_blank">🎷 黒本ルーレット</a>
-      <p>ジャズスタンダード曲をランダム抽選<br>
-        キー・スタイルで絞り込み可能！</p>
-    </div>
-    <div class="link-card">
-      <a href="https://note.com/ranats" target="_blank">📝 note連載</a>
-      <p>ジャズや教育、AI活用について発信予定です！</p>
-    </div>
-    <div class="link-card">
-      <a href="https://github.com/ranats" target="_blank">💻 GitHub プロジェクト一覧</a>
-      <p>教育×AI×自動化のコードやツール公開中！</p>
-    </div>
-  </div>
-
-  <div class="support-section">
-    <h2>🎁 応援はこちらから</h2>
-    <div class="support-buttons">
-      <a href="https://coff.ee/sopurani88f" target="_blank">Buy Me a Coffee</a>
-      <a href="https://github.com/sponsors/Ranats" target="_blank">GitHub Sponsors</a>
-      <a href="https://ofuse.me/d2c3aa65" target="_blank">OFUSE</a>
-      <a href="https://ko-fi.com/ranats" target="_blank">Ko-fi</a>
-    </div>
-  </div>
+  {{ content }}
 </body>
 </html>
